@@ -2,8 +2,8 @@
  * Tic Tac Toe Game Frontend Logic
  */
 
-// API endpoint base URL - change if needed for production
-const API_BASE_URL = 'http://localhost:8080/api';
+// API endpoint base URL - using relative path to work in both local and production environments
+const API_BASE_URL = '/api';
 
 // Game state
 let gameState = {
