@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Tic Tac Toe</h1>
+        </header>
+        
+        <main>
+            <div class="game-info">
+                <p id="game-status">Player <span id="current-player">X</span>'s turn</p>
+            </div>
+            
+            <div class="game-settings">
+                <div class="settings-row">
+                    <div class="setting-group">
+                        <label for="ai-enabled">Play against AI:</label>
+                        <input type="checkbox" id="ai-enabled" checked>
+                    </div>
+                    
+                    <div class="setting-group">
+                        <label for="ai-player">AI plays as:</label>
+                        <select id="ai-player">
+                            <option value="O" selected>O</option>
+                            <option value="X">X</option>
+                        </select>
+                    </div>
+                    
+                    <div class="setting-group">
+                        <label for="difficulty">Difficulty:</label>
+                        <select id="difficulty">
+                            <option value="easy">Easy</option>
+                            <option value="medium" selected>Medium</option>
+                            <option value="hard">Hard</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <button id="apply-settings" class="btn">Apply & New Game</button>
+            </div>
+            
+            <div class="game-board">
+                <div class="board-row">
+                    <div class="cell" data-row="0" data-col="0"></div>
+                    <div class="cell" data-row="0" data-col="1"></div>
+                    <div class="cell" data-row="0" data-col="2"></div>
+                </div>
+                <div class="board-row">
+                    <div class="cell" data-row="1" data-col="0"></div>
+                    <div class="cell" data-row="1" data-col="1"></div>
+                    <div class="cell" data-row="1" data-col="2"></div>
+                </div>
+                <div class="board-row">
+                    <div class="cell" data-row="2" data-col="0"></div>
+                    <div class="cell" data-row="2" data-col="1"></div>
+                    <div class="cell" data-row="2" data-col="2"></div>
+                </div>
+            </div>
+            
+            <div class="game-controls">
+                <button id="reset-game" class="btn">New Game</button>
+            </div>
+        </main>
+        
+        <footer>
+            <p>Created with <span class="heart">♥</span> in Python and JavaScript</p>
+        </footer>
+    </div>
+
+    <script src="js/game.js"></script>
+</body>
+</html>
